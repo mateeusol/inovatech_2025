@@ -1,0 +1,70 @@
+/* Estilos para o menu de navegação */
+.menu {
+  display: flex;
+  gap: 1.5rem; /* Espaçamento entre os links do menu */
+}
+
+.nav-link {
+  position: relative;
+  color: #374151; /* Cor do texto (cinza escuro) */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1e40af; /* Cor primária no hover */
+}
+
+/* Efeito de sublinhado animado */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #1e40af; /* Cor primária */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Estilos para os ícones de redes sociais */
+.redesocial {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaçamento entre os ícones */
+}
+
+.redesocial i {
+  font-size: 1.25rem; /* Tamanho dos ícones */
+  color: #4b5563; /* Cor dos ícones (cinza) */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redesocial i:hover {
+  color: #3b82f6; /* Cor secundária no hover */
+  transform: scale(1.1);
+}
+
+/* Outros estilos */
+.flauta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.cursor span {
+  cursor: pointer;
+}
+
+/* Estilos para o botão Voltar ao Topo */
+#back-to-top-btn {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
