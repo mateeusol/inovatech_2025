@@ -152,21 +152,36 @@
         <div
           class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
-          <!-- Foto da turma -->
           <div class="relative">
             <img
               src="img/bet.jpg"
               alt="Foto da turma"
               class="w-full rounded-2xl shadow-2xl"
               loading="lazy"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             />
           </div>
-          <!-- Texto -->
           <div>
-            <h3 class="text-3xl font-bold text-gray-800 mb-6">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6" data-aos="fade-up">
               Sobre Nosso Projeto
             </h3>
-            <div class="space-y-4 text-gray-600">
+            
+            <div class="mb-8 grid grid-cols-3 gap-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-4 bg-blue-50 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+                  <i class="bi bi-ear text-primary text-3xl"></i>
+                  <p class="text-sm font-semibold text-gray-700 mt-2">Vibração Tátil</p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+                  <i class="bi bi-cpu text-secondary text-3xl"></i>
+                  <p class="text-sm font-semibold text-gray-700 mt-2">ESP32</p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+                  <i class="bi bi-cash text-accent text-3xl"></i>
+                  <p class="text-sm font-semibold text-gray-700 mt-2">Baixo Custo</p>
+                </div>
+            </div>
+            <div class="space-y-4 text-gray-600" data-aos="fade-up" data-aos-delay="400">
               <div class="justificado">
                 <p>
                   A Flauta Assistiva (FAIAM) é um projeto desenvolvido por
@@ -208,8 +223,7 @@
                 </p>
               </div>
             </div>
-            <!-- Tags -->
-            <div class="mt-8 flex flex-wrap gap-4">
+            <div class="mt-8 flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="600">
               <div class="cursor w-full text-center">
                 <span
                   class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium"
